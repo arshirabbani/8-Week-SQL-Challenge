@@ -1,13 +1,13 @@
 # 🍜 Case Study #1 - Danny's Diner
 <p align="center">
-<img src="https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/IMG/1.png" align="center" width="400" height="400" >
+<img src="https://github.com/arshirabbani/8-Weeks-SQL-Challenge/blob/main/IMG/1.png" align="center" width="400" height="400" >
   
 ## 📕 Table of Contents
-* [Bussiness Task](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%231%20-%20Danny's%20Diner#%EF%B8%8F-bussiness-task)
-* [Entity Relationship Diagram](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%231%20-%20Danny's%20Diner#-entity-relationship-diagram)
-* [Case Study Questions](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%231%20-%20Danny's%20Diner#-case-study-questions)
-* [Bonus Questions](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%231%20-%20Danny's%20Diner#%EF%B8%8F-bonus-questions)  
-* [My Solution](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%231%20-%20Danny's%20Diner#-my-solution)
+* [Bussiness Task](https://github.com/arshirabbani/8-Weeks-SQL-Challenge/tree/main/Case%20Study%20%231%20-%20Danny's%20Diner#%EF%B8%8F-bussiness-task)
+* [Entity Relationship Diagram](https://github.com/arshirabbani/8-Weeks-SQL-Challenge/tree/main/Case%20Study%20%231%20-%20Danny's%20Diner#-entity-relationship-diagram)
+* [Case Study Questions](https://github.com/arshirabbani/8-Weeks-SQL-Challenge/tree/main/Case%20Study%20%231%20-%20Danny's%20Diner#-case-study-questions)
+* [Bonus Questions](https://github.com/arshirabbani/8-Weeks-SQL-Challenge/tree/main/Case%20Study%20%231%20-%20Danny's%20Diner#%EF%B8%8F-bonus-questions)  
+* [My Solution](https://github.com/arshirabbani/8-Weeks-SQL-Challenge/tree/main/Case%20Study%20%231%20-%20Danny's%20Diner#-my-solution)
 
 ---
 ## 🛠️ Bussiness Task
@@ -16,7 +16,7 @@ Danny wants to use the data to answer a few simple questions about his customers
 ---
 ## 🔐 Entity Relationship Diagram
 <p align="center">
-<img src="https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/IMG/e1.PNG" align="center" width="500" height="250" >
+<img src="https://github.com/arshirabbani/8-Weeks-SQL-Challenge/blob/main/IMG/e1.PNG" align="center" width="500" height="250" >
 
 ---
 ## ❓ Case Study Questions
