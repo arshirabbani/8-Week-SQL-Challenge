@@ -51,23 +51,23 @@ select
   customer_id, 
   product_name 
 from ordered_sales 
-where rn = 1;
+where rn = 1
+group by customer_id, product_name;
 
 
 -- 4. What is the most purchased item on the menu and how many times was it purchased by all customers?
 
-select 
+select top 1
   product_name, 
   count(1) as purchase_count 
 from 
-  dannys_diner.sales 
-  inner join dannys_diner.menu using (product_id) 
+  dannys_diner.sales s
+  inner join dannys_diner.menu m 
+  on s.product_id = m.product_id
 group by 
   product_name 
 order by 
-  purchased_count desc 
-limit 1;
-
+  purchase_count desc ;
 
 -- 5. Which item was the most popular for each customer?
 
@@ -82,14 +82,12 @@ with fav_prod as(
         count(1) desc
     ) as rn 
   from 
-    dannys_diner.sales 
-    inner join dannys_diner.menu using (product_id) 
+    dannys_diner.sales s
+    inner join dannys_diner.menu m 
+	on s.product_id = m.product_id
   group by 
     customer_id, 
     product_name 
-  order by 
-    customer_id, 
-    purchased_count desc
 ) 
 select 
   customer_id, 
@@ -101,70 +99,68 @@ where  rn = 1;
 
 -- 6. Which item was purchased first by the customer after they became a member?
 
+
 with member as (
   select 
-    customer_id, 
+    s.customer_id, 
     product_name, 
     order_date, 
-    dense_rank() over(
-      partition by customer_id 
-      order by 
-        order_date asc
-    ) as rn 
+	join_date,
+    dense_rank() over( partition by s.customer_id order by order_date asc) as rn 
   from 
-    dannys_diner.sales 
-    inner join dannys_diner.menu using (product_id) 
-    inner join dannys_diner.members using (customer_id) 
+    dannys_diner.sales s
+    inner join dannys_diner.menu m on s.product_id = m.product_id
+    inner join dannys_diner.members u on s.customer_id = u.customer_id
   where 
     order_date >= join_date
 ) 
 select 
   customer_id, 
-  product_name 
+  product_name ,
+  order_date, 
+  join_date
 from member 
 where  rn = 1;
 
 
 -- 7. Which item was purchased just before the customer became a member?
 
-with before_member as (
+with member as (
   select 
-    customer_id, 
+    s.customer_id, 
     product_name, 
     order_date, 
-    dense_rank() over(
-      partition by customer_id 
-      order by 
-        order_date desc
-    ) as rn 
+	join_date,
+    dense_rank() over(partition by s.customer_id order by order_date desc) as rn 
   from 
-    dannys_diner.sales 
-    inner join dannys_diner.menu using (product_id) 
-    inner join dannys_diner.members using (customer_id) 
+    dannys_diner.sales s
+    inner join dannys_diner.menu m on s.product_id = m.product_id
+    inner join dannys_diner.members u on s.customer_id = u.customer_id
   where 
     order_date < join_date
 ) 
 select 
   customer_id, 
-  product_name 
-from  before_member 
+  product_name ,
+  order_date, 
+  join_date
+from member 
 where  rn = 1;
-
 
 
 -- 8. What is the total items and amount spent for each member before they became a member?
 
 select 
-  customer_id, 
-  count(product_id) as item_count, 
-  sum(price) 
+  s.customer_id, 
+  count(s.product_id) as item_count, 
+  sum(price) as total_spend
 from 
-  dannys_diner.sales 
-  inner join dannys_diner.menu using (product_id) 
-  inner join dannys_diner.members using (customer_id) 
+    dannys_diner.sales s
+    inner join dannys_diner.menu m on s.product_id = m.product_id
+    inner join dannys_diner.members u on s.customer_id = u.customer_id
 where order_date < join_date 
-group by  customer_id 
-order by  customer_id;
+group by  s.customer_id 
+order by  s.customer_id;
 
 
 
@@ -172,15 +168,14 @@ order by  customer_id;
 -- Note: Only customers who are members receive points when purchasing items
 
 select 
-  customer_id, 
+  s.customer_id, 
   sum(
-    case when product_name = 'sushi' then 20 * price else 10 * price end
-  ) as total_points 
+    case when product_name = 'sushi' then 20 * price else 10 * price end) as total_points 
 from 
-  dannys_diner.sales 
-  inner join dannys_diner.menu using (product_id) 
-group by customer_id 
-order by customer_id;
+    dannys_diner.sales s
+    inner join dannys_diner.menu m on s.product_id = m.product_id
+group by s.customer_id 
+order by s.customer_id;
 
 
 
@@ -189,30 +184,25 @@ order by customer_id;
 
 with cte as (
   select 
-    customer_id, 
-    (
-      DATE_TRUNC('month', join_date) + INTERVAL '1 month - 1 day'
-    ) as EOM, 
-    order_date, 
-    join_date, 
-    join_date + 7, 
-    product_name, 
-    price, 
-    (
-      case when product_name = 'sushi' then 20 * price when order_date between join_date 
-      and join_date + 6 then 20 * price else 10 * price end
-    ) as points 
-  from 
-    dannys_diner.sales 
-    inner join dannys_diner.menu using (product_id) 
-    inner join dannys_diner.members using (customer_id)
-) 
+   customer_id, 
+   join_date,
+    EOMONTH('2021-01-01') AS last_date,     
+    DATEADD(d, 6, join_date) AS valid_date
+   from  dannys_diner.members
+   ) 
 select 
-  customer_id, sum(points) 
-from cte 
-where  order_date <= eom 
-group by  customer_id 
-order by  customer_id;
+  c.customer_id,
+  SUM(CASE 	WHEN s.order_date BETWEEN c.join_date AND c.valid_date THEN m.price*20
+			WHEN m.product_name = 'sushi' THEN m.price*20
+			ELSE m.price*10 END) AS total_points
+FROM dannys_diner.sales s
+JOIN cte c
+  ON s.customer_id = c.customer_id
+JOIN dannys_diner.menu m 
+  ON s.product_id = m.product_id
+WHERE s.order_date <= last_date
+GROUP BY c.customer_id;
+
 
 
 
@@ -223,34 +213,35 @@ order by  customer_id;
 -- Join All The Things
 
 select 
-  customer_id, 
+  s.customer_id, 
   order_date, 
   product_name, 
   price, 
   case when order_date >= join_date then 'Y' Else 'N' end as member 
 from 
-  dannys_diner.sales 
-  left join dannys_diner.menu using (product_id) 
-  left join dannys_diner.members using (customer_id) 
+    dannys_diner.sales s
+    inner join dannys_diner.menu m on s.product_id = m.product_id
+    left join dannys_diner.members u on s.customer_id = u.customer_id
 order by 
-  customer_id, order_date;
+  s.customer_id, order_date;
 
 
 
 -- Rank All The Things
 -- Note: Create a CTE using the result in the previous question
 
+
 with cte as (
   select 
-    customer_id, 
+    s.customer_id, 
     order_date, 
     product_name, 
     price, 
     case when order_date >= join_date then 'Y' Else 'N' end as member 
   from 
-    dannys_diner.sales 
-    left join dannys_diner.menu using (product_id) 
-    left join dannys_diner.members using (customer_id)
+    dannys_diner.sales s
+    inner join dannys_diner.menu m on s.product_id = m.product_id
+    left join dannys_diner.members u on s.customer_id = u.customer_id
 ) 
 select 
   *, 
