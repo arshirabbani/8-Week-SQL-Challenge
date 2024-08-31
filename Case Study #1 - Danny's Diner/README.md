@@ -382,3 +382,6 @@ from cte;
 | C           | 2021-01-01 | ramen        | 12    | N      | NULL    |
 | C           | 2021-01-01 | ramen        | 12    | N      | NULL    |
 | C           | 2021-01-07 | ramen        | 12    | N      | NULL    |
+
+## 🚀 My Solution
+* View the complete syntax [HERE]([https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%232%20-%20Pizza%20Runner/Syntax](https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/Case%20Study%20%231%20-%20Danny's%20Diner/query.sql).
