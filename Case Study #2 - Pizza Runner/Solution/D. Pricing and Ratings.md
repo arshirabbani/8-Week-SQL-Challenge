@@ -116,4 +116,4 @@ from #runner_orders_temp;
 | 138     | 43.56          | 94.44       |
 
 ---
-My solution for **[E. Bonus questions]**.
+My solution for **[E. Bonus questions](https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/Case%20Study%20%232%20-%20Pizza%20Runner/Solution/E.%20Bonus%20Questions.md)**.
