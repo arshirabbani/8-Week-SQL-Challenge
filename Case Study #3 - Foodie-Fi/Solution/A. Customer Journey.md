@@ -57,4 +57,4 @@ Customer 19 signed up for a free trial on the 22nd of June 2020, went on to pay 
 Customer 19 signed up to 7-day free trial on 22/06/2020. After that time, he/she upgraded the subscription to pro monthly plan on 29/06/2020. After 2 months using that plan, he/she upgraded to pro annual plan on 29/08/2020.
 
 ---
-My solution for **[B. Data Analysis Questions](https://github.com/qanhnn12/8-Week-SQL-Challenge/blob/main/Case%20Study%20%233%20-%20Foodie-Fi/Solution/B.%20Data%20Analysis%20Questions.md)**.
+My solution for **[B. Data Analysis Questions](https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/Case%20Study%20%233%20-%20Foodie-Fi/Solution/B.%20Data%20Analysis%20Questions.md)**.

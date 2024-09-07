@@ -126,4 +126,4 @@ The main query selects data from the dateRecursion CTE and inserts it into a new
 
 The query generates monthly payment records for customers who subscribed to plans in 2020 (excluding trial and some annual plans). Each row in the resulting payments table represents a payment made by a customer, and the payment_order column shows the sequence of these payments.
 ---
-My solution for **[D. Outside The Box Questions](https://github.com/qanhnn12/8-Week-SQL-Challenge/blob/main/Case%20Study%20%233%20-%20Foodie-Fi/Solution/D.%20Outside%20The%20Box%20Questions.md)**.
+My solution for **[D. Outside The Box Questions](https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/Case%20Study%20%233%20-%20Foodie-Fi/Solution/D.%20Outside%20The%20Box%20Questions.md)**.
