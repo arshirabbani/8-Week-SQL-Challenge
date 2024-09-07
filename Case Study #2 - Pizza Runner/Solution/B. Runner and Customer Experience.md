@@ -141,4 +141,4 @@ group by runner_id;
 | 3         | 1           | 2                | 50              |
 
 ---
-My solution for **[C. Ingredient Optimisation].**
+My solution for **[C. Ingredient Optimisation](https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/Case%20Study%20%232%20-%20Pizza%20Runner/Solution/C.%20Ingredient%20Optimisation.md)**

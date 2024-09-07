@@ -317,4 +317,4 @@ order by times_used desc;
 | Tomatoes     | 2           |
   
 ---
-My solution for **[D. Pricing and Ratings]**.
+My solution for **[D. Pricing and Ratings](https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/Case%20Study%20%232%20-%20Pizza%20Runner/Solution/D.%20Pricing%20and%20Ratings.md)**.
