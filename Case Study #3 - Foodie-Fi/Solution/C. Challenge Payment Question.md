@@ -1,0 +1,129 @@
+# 🥑 Case Study #3 - Foodie-Fi
+## C. Challenge Payment Question
+The Foodie-Fi team wants to create a new payments table for the year 2020 that includes amounts paid by each customer in the subscriptions table with the following requirements:
+  * monthly payments always occur on the same day of month as the original start_date of any monthly paid plan
+  * upgrades from basic to monthly or pro plans are reduced by the current paid amount in that month and start immediately
+  * upgrades from pro monthly to pro annual are paid at the end of the current billing period and also starts at the end of the month period
+  * once a customer churns they will no longer make payments
+
+Example outputs for this table might look like the following:
+
+| customer_id | plan_id | plan_name     | payment_date | amount | payment_order  |
+|-------------|---------|---------------|--------------|--------|----------------|
+| 1           | 1       | basic monthly | 2020-08-08   | 9.90   | 1              |
+| 1           | 1       | basic monthly | 2020-09-08   | 9.90   | 2              |
+| 1           | 1       | basic monthly | 2020-10-08   | 9.90   | 3              |
+| 1           | 1       | basic monthly | 2020-11-08   | 9.90   | 4              |
+| 1           | 1       | basic monthly | 2020-12-08   | 9.90   | 5              |
+| 2           | 3       | pro annual    | 2020-09-27   | 199.00 | 1              |
+| 13          | 1       | basic monthly | 2020-12-22   | 9.90   | 1              |
+| 15          | 2       | pro monthly   | 2020-03-24   | 19.90  | 1              |
+| 15          | 2       | pro monthly   | 2020-04-24   | 19.90  | 2              |
+| 16          | 1       | basic monthly | 2020-06-07   | 9.90   | 1              |
+| 16          | 1       | basic monthly | 2020-07-07   | 9.90   | 2              |
+| 16          | 1       | basic monthly | 2020-08-07   | 9.90   | 3              |
+| 16          | 1       | basic monthly | 2020-09-07   | 9.90   | 4              |
+| 16          | 1       | basic monthly | 2020-10-07   | 9.90   | 5              |
+| 16          | 3       | pro annual    | 2020-10-21   | 189.10 | 6              |
+| 18          | 2       | pro monthly   | 2020-07-13   | 19.90  | 1              |
+| 18          | 2       | pro monthly   | 2020-08-13   | 19.90  | 2              |
+| 18          | 2       | pro monthly   | 2020-09-13   | 19.90  | 3              |
+| 18          | 2       | pro monthly   | 2020-10-13   | 19.90  | 4              |
+
+---
+  * Use a recursive CTE to increment rows for all monthly paid plans in 2020 until customers changing their plans, except 'pro annual'.
+    * use ```CASE``` to create a new column ```last_date```: last day of the current plan
+    * if a customer kept using the current plan, last_date = '2020-12-31'
+    * if a customer changed the plan, last_date = (month difference between start_date and changing date) + start_date
+  * Create a new table ```payments``` by selecting the required columns
+
+```TSQL
+--Use a recursive CTE to increment rows for all monthly paid plans until customers changing the plan, except 'pro annual'
+WITH dateRecursion AS (
+  SELECT 
+    s.customer_id,
+    s.plan_id,
+    p.plan_name,
+    s.start_date AS payment_date,
+    CASE 
+       WHEN LEAD(s.start_date) OVER(PARTITION BY s.customer_id ORDER BY s.start_date) IS NULL THEN '2020-12-31'
+            ELSE DATEADD(MONTH, 
+		   DATEDIFF(MONTH, start_date, LEAD(s.start_date) OVER(PARTITION BY s.customer_id ORDER BY s.start_date)),
+		   start_date) END AS last_date,
+    p.price AS amount
+  FROM foodie_fi.subscriptions s
+  JOIN foodie_fi.plans p ON s.plan_id = p.plan_id
+  
+  WHERE p.plan_name NOT IN ('trial')
+    AND YEAR(start_date) = 2020
+
+  UNION ALL
+
+  SELECT 
+    customer_id,
+    plan_id,
+    plan_name,
+    DATEADD(MONTH, 1, payment_date) AS payment_date,
+    last_date,
+    amount
+  FROM dateRecursion
+   WHERE DATEADD(MONTH, 1, payment_date) <= last_date
+    AND plan_name != 'pro annual'
+)
+--Create a new table [payments]
+SELECT 
+  customer_id,
+  plan_id,
+  plan_name,
+  payment_date,
+  amount,
+  ROW_NUMBER() OVER(PARTITION BY customer_id ORDER BY payment_date) AS payment_order
+INTO payments
+FROM dateRecursion
+WHERE amount IS NOT NULL
+ORDER BY customer_id
+OPTION (MAXRECURSION 365);
+
+```
+
+**Explaination:**
+
+*1. WITH Clause (CTE) - dateRecursion*
+The WITH clause creates a recursive Common Table Expression (CTE) called dateRecursion, which is responsible for generating payment dates for each customer based on their subscription plan.
+
+*Initial Query*
+
+-Retrieves each subscription's customer_id, plan_id, plan_name, and start_date.
+
+-The last_date is calculated as either the last day of 2020 (2020-12-31) if there's no subsequent subscription for that customer or the date of the next subscription.
+
+-Filters out rows where the plan name is 'trial' and restricts the query to subscriptions that started in 2020.
+
+-The amount is set as the price from the plans table.
+
+*Recursive Query*:
+
+-For each row generated by the initial query, this part recursively generates monthly records by adding 1 month to the payment_date of the previous row.
+
+-The recursion continues until the payment_date exceeds the last_date.
+
+-Subscriptions with the plan name 'pro annual' are excluded from this recursion to prevent further expansion.
+
+*2. Main Query - SELECT INTO payments*
+The main query selects data from the dateRecursion CTE and inserts it into a new table called payments. Here's what it does:
+
+-customer_id, plan_id, plan_name, payment_date, and amount are selected from the CTE.
+
+-payment_order: This column ranks the payment records for each customer in chronological order using the ROW_NUMBER() window function. This helps track the sequence of payments made by the customer.
+
+-The WHERE clause filters out any rows where the amount is NULL, ensuring that only valid payments are included.
+
+-The final result set is ordered by customer_id.
+
+-OPTION (MAXRECURSION 365):This option limits the recursion depth to 365 iterations to prevent infinite loops or excessive recursion. In this case, it's assuming that no customer would have more than 365 payment periods in one year.
+
+**Summary**
+
+The query generates monthly payment records for customers who subscribed to plans in 2020 (excluding trial and some annual plans). Each row in the resulting payments table represents a payment made by a customer, and the payment_order column shows the sequence of these payments.
+---
+My solution for **[D. Outside The Box Questions](https://github.com/qanhnn12/8-Week-SQL-Challenge/blob/main/Case%20Study%20%233%20-%20Foodie-Fi/Solution/D.%20Outside%20The%20Box%20Questions.md)**.

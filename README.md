@@ -37,6 +37,21 @@ Danny started by recruiting “runners” to deliver fresh pizza from Pizza Runn
   [here](https://github.com/arshirabbani/8-Weeks-SQL-Challenge/tree/main/Case%20Study%20%231%20-%20Danny's%20Diner).***
 
 ---
+
+## 🥑 Case Study #3 - Foodie-Fi
+<p align="center">
+<img src="https://github.com/qanhnn12/8-Week-SQL-Challenge/blob/main/IMG/3.png" align="center" width="400" height="400" >
+
+Danny was scrolling through his Instagram feed when something really caught his eye - “80s Retro Styling and Pizza Is The Future!”
+
+Danny was sold on the idea, but he knew that pizza alone was not going to help him get seed funding to expand his new Pizza Empire - so he had one more genius idea to combine with it - he was going to Uberize it - and so Pizza Runner was launched!
+
+Danny started by recruiting “runners” to deliver fresh pizza from Pizza Runner Headquarters (otherwise known as Danny’s house) and also maxed out his credit card to pay freelance developers to build a mobile app to accept orders from customers.
+
+***View the case study [here](https://8weeksqlchallenge.com/case-study-3/) and my solution [here](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%233%20-%20Foodie-Fi).***
+
+---
+
 ## ✨ Contribution
 Contributions, issues, and feature requests are welcome!
 
