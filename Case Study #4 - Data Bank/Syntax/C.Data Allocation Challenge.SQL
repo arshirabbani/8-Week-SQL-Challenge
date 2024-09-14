@@ -1,5 +1,5 @@
 -------------------------------
---C.Data Allocation Challenge--
+--C. Data Allocation Challenge--
 -------------------------------
 
 --running customer balance column that includes the impact each transaction
