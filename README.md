@@ -9,6 +9,7 @@ Thanks @DataWithDanny for interesting SQL case studies! :wave:🏻
 * [Case Study #1 - Danny's Diner](https://github.com/arshirabbani/8-Weeks-SQL-Challenge#-case-study-1---dannys-diner)
 * [Case Study #2 - Pizza Runner](https://github.com/arshirabbani/8-Week-SQL-Challenge#-case-study-2---pizza-runner)
 * [Case Study #3 - Foodie-Fi](https://github.com/arshirabbani/8-Week-SQL-Challenge#-case-study-3---foodie-fi)
+* [Case Study #4 - Data Bank](https://github.com/arshirabbani/8-Week-SQL-Challenge#bar_chart-case-study-4---data-bank)
 
 ---
 ## 🍜 Case Study #1 - Danny's Diner
@@ -26,7 +27,7 @@ Danny’s Diner is in need of your assistance to help the restaurant stay afloat
 ---
 ## 🍕 Case Study #2 - Pizza Runner
 <p align="center">
-<img src="https://github.com/qanhnn12/8-Week-SQL-Challenge/blob/main/IMG/2.png" align="center" width="400" height="400" >
+<img src="https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/IMG/2.png" align="center" width="400" height="400" >
 
 Danny was scrolling through his Instagram feed when something really caught his eye - “80s Retro Styling and Pizza Is The Future!”
 
@@ -41,7 +42,7 @@ Danny started by recruiting “runners” to deliver fresh pizza from Pizza Runn
 
 ## 🥑 Case Study #3 - Foodie-Fi
 <p align="center">
-<img src="https://github.com/qanhnn12/8-Week-SQL-Challenge/blob/main/IMG/3.png" align="center" width="400" height="400" >
+<img src="https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/IMG/3.png" align="center" width="400" height="400" >
 
 Danny was scrolling through his Instagram feed when something really caught his eye - “80s Retro Styling and Pizza Is The Future!”
 
@@ -51,6 +52,22 @@ Danny started by recruiting “runners” to deliver fresh pizza from Pizza Runn
 
 ***View the case study [here](https://8weeksqlchallenge.com/case-study-3/) and my solution [here](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%233%20-%20Foodie-Fi).***
 
+---
+
+## :bar_chart: Case Study #4 - Data Bank
+<p align="center">
+<img src="https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/IMG/4.png" align="center" width="400" height="400" >
+
+There is a new innovation in the financial industry called Neo-Banks: new aged digital only banks without physical branches.
+
+Danny thought that there should be some sort of intersection between these new age banks, cryptocurrency and the data world…so he decides to launch a new initiative - Data Bank!
+
+The management team at Data Bank want to increase their total customer base - but also need some help tracking just how much data storage their customers will need.
+
+This case study is all about calculating metrics, growth and helping the business analyse their data in a smart way to better forecast and plan for their future developments!
+
+***View the case study [here](https://8weeksqlchallenge.com/case-study-4/) and my solution [here](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%234%20-%20Data%20Bank).***
+  
 ---
 
 ## ✨ Contribution
