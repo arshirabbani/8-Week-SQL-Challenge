@@ -122,4 +122,4 @@ where perc_inc > 5;
 | 75.6           |
 
 
-My solution for **[C.Data Allocation Challenge](https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/Case%20Study%20%234%20-%20Data%20Bank/Solution/C.%20Customer%20Transactions.md)**.
+My solution for **[C.Data Allocation Challenge](https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/Case%20Study%20%234%20-%20Data%20Bank/Solution/C.Data%20Allocation%20Challenge.md)**.
