@@ -2,20 +2,31 @@
 ## A. Data Cleansing Steps
 
 
-Columns	Actions to take
-week_date             	Convert to DATE using CONVERT
-week_number*	          Extract number of week using DATEPART
-month_number*	          Extract month using DATEPART
-calendar_year*	        Extract year using DATEPART
-region	                No changes
-platform	              No changes
-segment	                No changes
-customer_type	          No changes
-age_band*	              Use CASE WHEN to categorize segment: '1' = Young Adults, '2' = Middle                  Aged, '3' or '4' = Retirees and null = unknown
-demographic*	          Use CASE WHEN to categorize segment: 'C' = Couples, 'F' = Families and null                    unknown
-transactions	          No changes
-sales	                  CAST to bigint for further aggregations
-avg_transaction*	      Divide sales by transactions and round up to 2 decimal places
+# Data Transformation Instructions
+
+## Columns and Actions to Take
+
+- **week_date**: Convert to DATE using `CONVERT`
+- **week_number**: Extract number of week using `DATEPART`
+- **month_number**: Extract month using `DATEPART`
+- **calendar_year**: Extract year using `DATEPART`
+- **region**: No changes
+- **platform**: No changes
+- **segment**: No changes
+- **customer_type**: No changes
+- **age_band**: Use `CASE WHEN` to categorize segment:
+  - '1' = Young Adults
+  - '2' = Middle Aged
+  - '3' or '4' = Retirees
+  - null = unknown
+- **demographic**: Use `CASE WHEN` to categorize segment:
+  - 'C' = Couples
+  - 'F' = Families
+  - null = unknown
+- **transactions**: No changes
+- **sales**: CAST to bigint for further aggregations
+- **avg_transaction**: Divide sales by transactions and round up to 2 decimal places
+
                    
 
 ```TSQL
