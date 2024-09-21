@@ -10,7 +10,7 @@ Thanks @DataWithDanny for interesting SQL case studies! :wave:🏻
 * [Case Study #2 - Pizza Runner](https://github.com/arshirabbani/8-Week-SQL-Challenge#-case-study-2---pizza-runner)
 * [Case Study #3 - Foodie-Fi](https://github.com/arshirabbani/8-Week-SQL-Challenge#-case-study-3---foodie-fi)
 * [Case Study #4 - Data Bank](https://github.com/arshirabbani/8-Week-SQL-Challenge#bar_chart-case-study-4---data-bank)
-
+* [Case Study #5 - Data Mart](https://github.com/arshirabbani/8-Week-SQL-Challenge#-case-study-5---data-mart)
 ---
 ## 🍜 Case Study #1 - Danny's Diner
 <p align="center">
@@ -67,6 +67,18 @@ The management team at Data Bank want to increase their total customer base - bu
 This case study is all about calculating metrics, growth and helping the business analyse their data in a smart way to better forecast and plan for their future developments!
 
 ***View the case study [here](https://8weeksqlchallenge.com/case-study-4/) and my solution [here](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%234%20-%20Data%20Bank).***
+  
+---
+
+## 🛒 Case Study #5 - Data Mart
+<p align="center">
+<img src="https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/IMG/5.png" align="center" width="400" height="400" >
+
+Data Mart is Danny’s latest venture and after running international operations for his online supermarket that specialises in fresh produce - Danny is asking for your support to analyse his sales performance.
+
+In June 2020 - large scale supply changes were made at Data Mart. All Data Mart products now use sustainable packaging methods in every single step from the farm all the way to the customer. Danny needs your help to quantify the impact of this change on the sales performance for Data Mart and it’s separate business areas.
+
+***View the case study [here](https://8weeksqlchallenge.com/case-study-5/) and my solution [here](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%235%20-%20Data%20Mart).***
   
 ---
 
