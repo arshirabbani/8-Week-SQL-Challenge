@@ -11,6 +11,7 @@ Thanks @DataWithDanny for interesting SQL case studies! :wave:🏻
 * [Case Study #3 - Foodie-Fi](https://github.com/arshirabbani/8-Week-SQL-Challenge#-case-study-3---foodie-fi)
 * [Case Study #4 - Data Bank](https://github.com/arshirabbani/8-Week-SQL-Challenge#bar_chart-case-study-4---data-bank)
 * [Case Study #5 - Data Mart](https://github.com/arshirabbani/8-Week-SQL-Challenge#-case-study-5---data-mart)
+* [Case Study #6 - Clique Bait](https://github.com/arshirabbani/8-Week-SQL-Challenge#-case-study-6---clique-bait)
 ---
 ## 🍜 Case Study #1 - Danny's Diner
 <p align="center">
@@ -81,6 +82,17 @@ In June 2020 - large scale supply changes were made at Data Mart. All Data Mart 
 ***View the case study [here](https://8weeksqlchallenge.com/case-study-5/) and my solution [here](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%235%20-%20Data%20Mart).***
   
 ---
+## 🐟 Case Study #6 - Clique Bait
+<p align="center">
+<img src="https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/IMG/6.png" align="center" width="400" height="400" >
+
+Clique Bait is not like your regular online seafood store - the founder and CEO Danny, was also a part of a digital data analytics team and wanted to expand his knowledge into the seafood industry!
+
+In this case study - you are required to support Danny’s vision and analyse his dataset and come up with creative solutions to calculate funnel fallout rates for the Clique Bait online store.
+
+***View the case study [here](https://8weeksqlchallenge.com/case-study-6/) and my solution [here](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%236%20-%20Clique%20Bait).***
+  
+
 
 ## ✨ Contribution
 Contributions, issues, and feature requests are welcome!
