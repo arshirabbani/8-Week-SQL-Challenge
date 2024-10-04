@@ -12,6 +12,7 @@ Thanks @DataWithDanny for interesting SQL case studies! :wave:🏻
 * [Case Study #4 - Data Bank](https://github.com/arshirabbani/8-Week-SQL-Challenge#bar_chart-case-study-4---data-bank)
 * [Case Study #5 - Data Mart](https://github.com/arshirabbani/8-Week-SQL-Challenge#-case-study-5---data-mart)
 * [Case Study #6 - Clique Bait](https://github.com/arshirabbani/8-Week-SQL-Challenge#-case-study-6---clique-bait)
+* [Case Study #7 - Balanced Tree Clothing Co.](https://github.com/arshirabbani/8-Week-SQL-Challenge#tshirt-case-study-7---balanced-tree-clothing-co)
 ---
 ## 🍜 Case Study #1 - Danny's Diner
 <p align="center">
@@ -92,6 +93,18 @@ In this case study - you are required to support Danny’s vision and analyse hi
 
 ***View the case study [here](https://8weeksqlchallenge.com/case-study-6/) and my solution [here](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%236%20-%20Clique%20Bait).***
   
+---
+## :tshirt: Case Study #7 - Balanced Tree Clothing Co.
+<p align="center">
+<img src="https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/IMG/7.png" align="center" width="400" height="400" >
+
+Balanced Tree Clothing Company prides themselves on providing an optimised range of clothing and lifestyle wear for the modern adventurer!
+
+Danny, the CEO of this trendy fashion company has asked you to assist the team’s merchandising teams analyse their sales performance and generate a basic financial report to share with the wider business.
+
+***View the case study [here](https://8weeksqlchallenge.com/case-study-7/) and my solution [here](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co.).***
+
+---
 
 
 ## ✨ Contribution
