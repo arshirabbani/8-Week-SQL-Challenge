@@ -4,10 +4,10 @@
 <img src="https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/IMG/7.png" align="center" width="400" height="400" >
 
 ## 📕 Table of Contents
-* [Bussiness Task](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co.#%EF%B8%8F-bussiness-task)
-* [Entity Relationship Diagram](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co.#-entity-relationship-diagram)
-* [Case Study Questions](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co.#-case-study-questions)
-* [My Solution](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co.#-my-solution)
+* [Bussiness Task](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co#%EF%B8%8F-bussiness-task)
+* [Entity Relationship Diagram](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co#-entity-relationship-diagram)
+* [Case Study Questions](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co#-case-study-questions)
+* [My Solution](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co#-my-solution)
 
 ---
 ## 🛠️ Bussiness Task
@@ -30,7 +30,7 @@ and generate a basic financial report to share with the wider business.
 ---
 ## ❓ Case Study Questions
 ### A. High Level Sales Analysis
-View my solution [HERE](https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co./Solution/A.%20High%20Level%20Sales%20Analysis.md).
+View my solution [HERE](https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co/Solution/A.%20High%20Level%20Sales%20Analysis.md).
 
 1. What was the total quantity sold for all products?
 2. What is the total generated revenue for all products before discounts?
@@ -38,7 +38,7 @@ View my solution [HERE](https://github.com/arshirabbani/8-Week-SQL-Challenge/blo
 
 ---
 ### B. Transaction Analysis
-View my solution [HERE](https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co./Solution/B.%20Transaction%20Analysis.md).
+View my solution [HERE](https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co/Solution/B.%20Transaction%20Analysis.md).
 
 1. How many unique transactions were there?
 2. What is the average unique products purchased in each transaction?
@@ -49,7 +49,7 @@ View my solution [HERE](https://github.com/arshirabbani/8-Week-SQL-Challenge/blo
 
 ---
 ### C. Product Analysis
-View my solution [HERE](https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co./Solution/C.%20Product%20Analysis.md).
+View my solution [HERE](https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co/Solution/C.%20Product%20Analysis.md).
 
 1. What are the top 3 products by total revenue before discount?
 2. What is the total quantity, revenue and discount for each segment?
@@ -64,11 +64,11 @@ View my solution [HERE](https://github.com/arshirabbani/8-Week-SQL-Challenge/blo
 
 ---
 ### D. Bonus Challenge
-View my solution [HERE](https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co./Solution/D.%20Bonus%20Question.md).
+View my solution [HERE](https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co/Solution/D.%20Bonus%20Question.md).
 
 Use a single SQL query to transform the `product_hierarchy` and `product_prices` datasets to the `product_details` table.
 
 ---
 ## 🚀 My Solution
-* View the complete syntax [HERE](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co./Syntax).
-* View the result and explanation [HERE](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co./Solution).
+* View the complete syntax [HERE](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co/Syntax).
+* View the result and explanation [HERE](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co/Solution).

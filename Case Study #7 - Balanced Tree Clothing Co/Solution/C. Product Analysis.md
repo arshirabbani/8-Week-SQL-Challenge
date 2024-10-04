@@ -216,4 +216,4 @@ where common_combinations = (select max(common_combinations)   from combination_
 | c4a632, d5e9a6, b9a74d           | Navy Oversized Jeans - Womens, Khaki Suit Jacket - Womens, White Striped Socks - Mens |
 
 ---
-My solution for **[D. Bonus Question](https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co./Solution/D.%20Bonus%20Question.md)**.
+My solution for **[D. Bonus Question](https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co/Solution/D.%20Bonus%20Question.md)**.

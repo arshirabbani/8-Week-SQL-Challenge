@@ -27,4 +27,4 @@ select cast(sum(qty*price*discount/100.0) as float) as discounted_amount from ba
 | 156229.14       |
 
 ---
-My solution for **[B. Transaction Analysis](https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co./Solution/B.%20Transaction%20Analysis.md)**.
+My solution for **[B. Transaction Analysis](https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co/Solution/B.%20Transaction%20Analysis.md)**.

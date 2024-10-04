@@ -80,4 +80,4 @@ group by member;
 | member     | 516.27       |
 | non-member | 515.04       |
 ---
-My solution for **[C. Product Analysis](https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co./Solution/C.%20Product%20Analysis.md)**.
+My solution for **[C. Product Analysis](https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co/Solution/C.%20Product%20Analysis.md)**.
