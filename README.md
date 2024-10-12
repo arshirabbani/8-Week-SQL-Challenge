@@ -13,6 +13,8 @@ Thanks @DataWithDanny for interesting SQL case studies! :wave:🏻
 * [Case Study #5 - Data Mart](https://github.com/arshirabbani/8-Week-SQL-Challenge#-case-study-5---data-mart)
 * [Case Study #6 - Clique Bait](https://github.com/arshirabbani/8-Week-SQL-Challenge#-case-study-6---clique-bait)
 * [Case Study #7 - Balanced Tree Clothing Co.](https://github.com/arshirabbani/8-Week-SQL-Challenge#tshirt-case-study-7---balanced-tree-clothing-co)
+* [Case Study #8 - Fresh Segments](https://github.com/qanhnn12/8-Week-SQL-Challenge#-case-study-8---fresh-segments)
+
 ---
 ## 🍜 Case Study #1 - Danny's Diner
 <p align="center">
@@ -103,6 +105,20 @@ Balanced Tree Clothing Company prides themselves on providing an optimised range
 Danny, the CEO of this trendy fashion company has asked you to assist the team’s merchandising teams analyse their sales performance and generate a basic financial report to share with the wider business.
 
 ***View the case study [here](https://8weeksqlchallenge.com/case-study-7/) and my solution [here](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%237%20-%20Balanced%20Tree%20Clothing%20Co).***
+
+---
+
+## 🍊 Case Study #8 - Fresh Segments
+<p align="center">
+<img src="https://github.com/arshirabbani/8-Week-SQL-Challenge/blob/main/IMG/8.png" align="center" width="400" height="400" >
+
+Danny created Fresh Segments, a digital marketing agency that helps other businesses analyse trends in online ad click behaviour for their unique customer base.
+  
+Clients share their customer lists with the Fresh Segments team who then aggregate interest metrics and generate a single dataset worth of metrics for further analysis. In particular - the composition and rankings for different interests are provided for each client showing the proportion of their customer list who interacted with online assets related to each interest for each month.
+
+Danny has asked for your assistance to analyse aggregated metrics for an example client and provide some high level insights about the customer list and their interests.
+
+***View the case study [here](https://8weeksqlchallenge.com/case-study-8/) and my solution [here](https://github.com/arshirabbani/8-Week-SQL-Challenge/tree/main/Case%20Study%20%238%20-%20Fresh%20Segments).***
 
 ---
 
