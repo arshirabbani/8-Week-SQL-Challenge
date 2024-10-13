@@ -13,7 +13,7 @@ Thanks @DataWithDanny for interesting SQL case studies! :wave:🏻
 * [Case Study #5 - Data Mart](https://github.com/arshirabbani/8-Week-SQL-Challenge#-case-study-5---data-mart)
 * [Case Study #6 - Clique Bait](https://github.com/arshirabbani/8-Week-SQL-Challenge#-case-study-6---clique-bait)
 * [Case Study #7 - Balanced Tree Clothing Co.](https://github.com/arshirabbani/8-Week-SQL-Challenge#tshirt-case-study-7---balanced-tree-clothing-co)
-* [Case Study #8 - Fresh Segments](https://github.com/qanhnn12/8-Week-SQL-Challenge#-case-study-8---fresh-segments)
+* [Case Study #8 - Fresh Segments](https://github.com/arshirabbani/8-Week-SQL-Challenge#-case-study-8---fresh-segments)
 
 ---
 ## 🍜 Case Study #1 - Danny's Diner
